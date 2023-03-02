@@ -4,42 +4,62 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Light Theme</title>
-<link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-<script>var __adobewebfontsappname__="dreamweaver"</script>
-<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<title>JavaScript</title>
+
+	<!-- PART 1    Hello World App in JavaScript **************************************************            -->
+	
+	<h1>My First Javascript Program ...</h1>
+	
+<script>
+	document.write("Hello World..! This message is from the web page");
+	</script>
 </head>
 <body>
-<!-- Main Container -->
-<div class="container"> 
-  <!-- Navigation -->
-  <header> <a href="">
-    <h4 class="logo">LIGHT</h4>
-    </a>
-    <nav>
-      <ul>
-        <li><a href="#hero">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li> <a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <h2 class="hero_header">HERO <span class="light">LIGHT</span></h2>
-    <p class="tagline">Light is a simple one page website</p>
-  </section>
- 
-  <!-- Copyrights Section -->
-  <div class="copyright">&copy;2023- <strong>KJSHugo</strong></div>
-</div>
-<!-- Main Container Ends -->
+
+	
+	<script>
+		console.log("Hello World..! This message is from the console.");
+	</script>
+  
+	<!-- PART 2     Communicating with End Users from Javascript    *************************************     -->
+	
+	<br><br>
+	<h2>Different ways to display information: </h2>
+	<p id="code"></p>
+	<script>
+		document.getElementById("code").innerHTML = "Hello World! This is from the setting of the innerHTML";
+	</script>
+	<p>Hello World! I am from within the paragraph tag in the HTML page</p>
+	<script>
+		document.write("Hello world! I am from the first document.write()");
+	</script>
+  	<br><br>
+	<button onclick="window.alert('Hello world! I am from the window alert')">
+	Ckick ME to see a window alert</button>
+	<br><br>
+	<button onclick="document.write('Hello world! A document.write() after a page loads clears the entire document!')">
+	Click ME to clear the existing HTML</button>
+	
+	<script>console.log("Hello WORLD! This is the 2nd Console Message...")</script>
+	
+	<br><br>
+	
+	<!-- PART 3    Separating HTML and JavaScript Sources *********************************************     -->
+	
+	<h2>Separating HTML and JavaScript</h2>
+	<p>This is from the HTML file...</p>
+	
+	<script src="SeparateHTMLandJS.js"></script>
+	
+	<!-- PART 4     Accessing the DOM (Document Object Model) from JavaScript  *************************     -->
+	
+	<h2>Accessing the DOM (<i><u>D</u></i>ocument <i><u>O</u></i>bject <i><u>M</u></i>odel)</h2>
+	
+	<p id="numericsection"></p>
+	<p id="textsection"></p>
+	
+	<script src="AccessingDOM.js"> </script>
+	
+	
 </body>
 </html>
