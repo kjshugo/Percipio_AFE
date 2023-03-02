@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>UsingStrict</title>
+</head>
+
+<body>
+	<!-- PART 5     The Use of STRICT Mode  ************************************************************     -->
+	
+	<h2>JavaScript STRICT Mode (JavaScript variables must be defined!)</h2>
+	<p>Strct Mode also stops using pre-defined special (or 'reserved words')as variables (eg. undefined)</p>
+	
+	<script src="StrictMode.js"></script>
+	
+	<!-- PART 6    Variable Declarations: var, let and const  ******************************************     -->
+	
+	<h2>Variable Declarations: var, let and const</h2>
+	<p><u>var :</u> defines variables which can be re-defined (be careful!)</p>
+	<p><u>let :</u> defines variables that can <b>NOT</b> be re-defined!</p>
+	<p><u>const :</u>defines constant value to a named variable and cannot be updated, changed or re-declared.
+	<br> Contant variables best practice is to use CAPS for them (eg. MY_BIRTHDAY = "15/08/1968").</p>
+	<p><i>Variable Hoisting</i> is using a variable before it is defined. (Fuck knows why you'd do this!).
+	<br>This can only be done with the 'var' command ('let' and 'const' will throw an error)</p>
+	
+	<!-- PART 7    Empty Values in JavaScript: undefined and null / Conversions  ***********************     -->
+	
+	<h2>Empty Values in JavaScript: undefined and null / Conversions</h2>
+	
+	<p>Variables (var and let) that are defined but with no set value are implicintly given the value 'undefined'.
+	<br>The 'null' value has to be explicitly defined when creating variables.</p>
+	
+	<p>JavaScript implicitly converts numbers to strings if used in calculations (left to right)
+	<br> eg. var x = "5" + 2 + 3 will equal 523 (string)
+	<br> and var y = 2 + 3 + "7" will equal 57 (string - but does the number calc first)
+	<br> 'let' works the same way.</p>
+	
+	<!-- PART 8    User Interactions Using alert, prompt and confirm  *********************************     -->
+	
+	<h2>User Interactions Using alert, prompt and confirm functions</h2>
+	
+	<script src="AlertPromptConfirm.js"> </script>
+	<p><i>alert :</i> places an alert on the screen that the user can only acknowledge.
+	<br><i>prompt :</i> puts an input box on the screen that the user can interact with and returns a value that's entered.
+	<br><i>confirm :</i> puts an option box a user can confirm 'OK' (returns true) or cancel (returns false)</p>
+	
+</body>
+</html>
